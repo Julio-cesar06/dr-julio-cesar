@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto demonstrativo de site para consultório de clínica geral.">
+    <title>Dr. Júlio César | Clínico Geral</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+
+
+
+<body>
+
+    <!-- AVISO DE PROJETO FICTÍCIO -->
+    <div class="aviso-demo">
+        Projeto demonstrativo de portfólio — Médico e consultório fictícios
+    </div>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <div class="container nav-container">
+
+            
+
+        
+
+            <a href="#inicio" class="logo">
+                <span class="logo-simbolo">RM</span>
+                <div>
+                    <strong>Dr. Júlio César</strong>
+                    <small>Clínico Geral</small>
+                </div>
+            </a>
+
+        
+
+            <button class="menu-toggle" type="button"
+                    aria-label="Abrir menu"
+                    aria-expanded="false"
+                    aria-controls="menu-principal">
+                ☰
+            </button>
+
+            <nav id="menu-principal" class="menu"
+                 aria-label="Navegação principal">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#diferenciais">Diferenciais</a>
+                <a href="#contato">Contato</a>
+                <a href="#agendamento" class="btn btn-nav">
+                    Agendar consulta
+                    
+                </a>
+                <a href="login.html" class="acesso-admin">
+                    🔐 Área Administrativa
+                </a>
+                
+            </nav>
+
+            
+            
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- APRESENTAÇÃO PRINCIPAL -->
+        <section id="inicio" class="hero">
+            <div class="container hero-container">
+
+                <div class="hero-conteudo">
+                    <span class="etiqueta">
+                        MEDICINA COM ATENÇÃO E CUIDADO
+                    </span>
+
+                    <h1>
+                        Sua saúde merece
+                        <span>um cuidado especial.</span>
+                    </h1>
+
+                    <p>
+                        Um atendimento humanizado,
+                        individualizado e dedicado
+                        ao seu bem-estar em todas
+                        as fases da vida.
+                    </p>
+
+                    <div class="hero-botoes">
+                        <a href="#agendamento" class="btn btn-primario">
+                            Agendar consulta
+                        </a>
+                        <a href="#sobre" class="btn btn-secundario">
+                            Conheça o médico
+                        </a>
+                    </div>
+
+                    <div class="hero-informacoes">
+                        <div>
+                            <strong>Atendimento</strong>
+                            <span>Humanizado</span>
+                        </div>
+                        <div>
+                            <strong>Consultas</strong>
+                            <span>Personalizadas</span>
+                        </div>
+                        <div>
+                            <strong>Cuidado</strong>
+                            <span>Integral</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-imagem">
+                    <img src="images/perfil.png"
+                         alt="Imagem ilustrativa do médico fictício">
+                    <div class="imagem-detalhe">
+                        <span>✦</span>
+                        Cuidar de você é nossa prioridade
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SOBRE O MÉDICO -->
+        <section id="sobre" class="secao sobre">
+            <div class="container sobre-container">
+
+                <div class="sobre-imagem">
+                    <img src="images/perfil.png"
+                         alt="Imagem ilustrativa do médico fictício">
+                </div>
+
+                <div class="sobre-conteudo">
+                    <span class="etiqueta">SOBRE O MÉDICO</span>
+
+                    <h2>
+                        Medicina com propósito,
+                        cuidado e dedicação.
+                    </h2>
+
+                    <p>
+                        Dr. Júlio César é um personagem
+                        fictício criado para demonstrar
+                        um modelo de site profissional
+                        para consultórios médicos.
+                    </p>
+
+                    <p>
+                        Nossa proposta é apresentar uma
+                        experiência acolhedora, com
+                        comunicação clara, atenção
+                        individualizada e foco na prevenção.
+                    </p>
+
+                    <a href="#agendamento" class="btn btn-primario">
+                        Solicitar agendamento
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section id="servicos" class="secao servicos">
+            <div class="container">
+
+                <div class="secao-titulo">
+                    <span class="etiqueta">NOSSOS SERVIÇOS</span>
+                    <h2>Cuidado completo para sua saúde</h2>
+                    <p>
+                        Conheça os atendimentos apresentados
+                        neste projeto demonstrativo.
+                    </p>
+                </div>
+
+                <div class="servicos-grid">
+
+                    <article class="servico-card">
+                        <div class="servico-icone">🩺</div>
+                        <h3>Consulta clínica geral</h3>
+                        <p>
+                            Avaliação de sintomas,
+                            histórico de saúde
+                            e orientações individuais.
+                        </p>
+                    </article>
+
+                    <article class="servico-card">
+                        <div class="servico-icone">❤️</div>
+                        <h3>Saúde preventiva</h3>
+                        <p>
+                            Acompanhamento preventivo
+                            e orientações para hábitos
+                            mais saudáveis.
+                        </p>
+                    </article>
+
+                    <article class="servico-card">
+                        <div class="servico-icone">📋</div>
+                        <h3>Check-up clínico</h3>
+                        <p>
+                            Avaliação geral de saúde
+                            e indicação individualizada
+                            de exames quando necessários.
+                        </p>
+                    </article>
+
+                    <article class="servico-card">
+                        <div class="servico-icone">💙</div>
+                        <h3>Acompanhamento contínuo</h3>
+                        <p>
+                            Monitoramento clínico
+                            e acompanhamento de
+                            condições crônicas.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- DIFERENCIAIS -->
+        <section id="diferenciais" class="secao diferenciais">
+            <div class="container">
+
+                <div class="secao-titulo">
+                    <span class="etiqueta">NOSSO COMPROMISSO</span>
+                    <h2>Uma experiência pensada para você</h2>
+                </div>
+
+                <div class="diferenciais-grid">
+
+                    <div class="diferencial-item">
+                        <span>01</span>
+                        <h3>Escuta atenciosa</h3>
+                        <p>
+                            Tempo e atenção para
+                            compreender suas necessidades.
+                        </p>
+                    </div>
+
+                    <div class="diferencial-item">
+                        <span>02</span>
+                        <h3>Atendimento acolhedor</h3>
+                        <p>
+                            Uma experiência baseada
+                            no respeito e na confiança.
+                        </p>
+                    </div>
+
+                    <div class="diferencial-item">
+                        <span>03</span>
+                        <h3>Orientações claras</h3>
+                        <p>
+                            Informações acessíveis
+                            para apoiar suas decisões.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- AGENDAMENTO -->
+        <section id="agendamento" class="secao agendamento">
+            <div class="container agendamento-container">
+
+                <div class="agendamento-texto">
+                    <span class="etiqueta">AGENDE SUA CONSULTA</span>
+
+                    <h2>
+                        O primeiro passo para
+                        cuidar da sua saúde.
+                    </h2>
+
+                    <p>
+                        Escolha uma data e um horário para
+                        reservar uma consulta demonstrativa.
+                        Nenhuma consulta real será marcada.
+                    </p>
+                </div>
+
+                <form id="form-agendamento" class="form-agendamento">
+
+                    <h3>Solicitar agendamento</h3>
+
+                    <label for="nome">Nome completo</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Seu nome"
+                        autocomplete="name"
+                        maxlength="100"
+                        required
+                    >
+
+                    <label for="telefone">Telefone</label>
+                    <input
+                        type="tel"
+                        id="telefone"
+                        name="telefone"
+                        placeholder="(00) 00000-0000"
+                        autocomplete="tel"
+                        maxlength="20"
+                        required
+                    >
+
+                    <label for="data">Data desejada</label>
+                    <input
+                        type="date"
+                        id="data"
+                        name="data"
+                        required
+                    >
+
+                    <label for="horario">Horário disponível</label>
+                    <select
+                        id="horario"
+                        name="horario"
+                        required
+                        disabled
+                    >
+                        <option value="">
+                            Primeiro selecione uma data
+                        </option>
+                    </select>
+
+                    <p id="status-horarios"
+                       class="form-aviso"
+                       aria-live="polite">
+                        Escolha uma data para consultar os horários disponíveis.
+                    </p>
+
+                    <button
+                        type="submit"
+                        id="btn-agendar"
+                        class="btn btn-primario"
+                        disabled
+                    >
+                        Reservar horário demonstrativo
+                    </button>
+
+                    <!-- BOTÃO FIXO DO WHATSAPP -->
+
+<a
+id="link-whatsapp"
+href="https://wa.me/5562985928319"
+target="_blank"
+rel="noopener noreferrer"
+class="btn btn-whatsapp"
+>
+📲 Confirmar pelo WhatsApp
+</a>  
+
+                    
+
+                    <p class="form-aviso">
+                        Demonstração de portfólio.
+                        Não envie dados pessoais
+                        ou informações sensíveis.
+                    </p>
+
+                    <p id="mensagem-formulario"
+                       role="status"
+                       aria-live="polite"></p>
+
+                </form>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="secao contato">
+            <div class="container">
+
+                <div class="secao-titulo">
+                    <span class="etiqueta">CONTATO</span>
+                    <h2>Estamos aqui para você</h2>
+                    <p>
+                        Informações ilustrativas de
+                        contato do consultório.
+                    </p>
+                </div>
+
+                <div class="contato-grid">
+
+                    <div class="contato-card">
+                        <h3>Localização</h3>
+                        <p>
+                            Endereço fictício
+                            Anápolis — Goiás
+                        </p>
+                    </div>
+
+                    <div class="contato-card">
+                        <h3>Horário ilustrativo</h3>
+                        <p>
+                            Segunda a sexta
+                            08h às 18h
+                        </p>
+                    </div>
+
+                    <div class="contato-card">
+                        <h3>Agendamento</h3>
+                        <p>
+                            Solicitações demonstrativas
+                            pelo formulário do site.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="container rodape-container">
+
+            <div>
+                <h3>Dr. Júlio César</h3>
+                <p>Clínico Geral</p>
+            </div>
+
+            <p>
+                Projeto fictício para fins
+                de demonstração e portfólio.
+            </p>
+
+            <p>
+                Desenvolvido por Júlio César
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>

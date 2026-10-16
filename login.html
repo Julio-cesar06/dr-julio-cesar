@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Login Administrativo | Clínica Dr. Júlio César</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #0d3557, #087c99);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 420px;
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 40px 30px;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .icone {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #0d3557;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .subtitulo {
+            color: #667085;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .campo {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .campo label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            color: #344054;
+            margin-bottom: 8px;
+        }
+
+        .campo input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #d0d5dd;
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .campo input:focus {
+            border-color: #087c99;
+            box-shadow: 0 0 0 3px rgba(8,124,153,0.12);
+        }
+
+        .btn-entrar {
+            width: 100%;
+            background: #087c99;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-entrar:hover {
+            background: #065e77;
+        }
+
+        .btn-entrar:disabled {
+            opacity: 0.6;
+            cursor: wait;
+        }
+
+        .mensagem {
+            margin-top: 18px;
+            font-size: 14px;
+            min-height: 20px;
+            color: #b42318;
+        }
+
+        .voltar {
+            display: inline-block;
+            margin-top: 25px;
+            color: #087c99;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .voltar:hover {
+            text-decoration: underline;
+        }
+
+        .rodape {
+            margin-top: 30px;
+            color: #98a2b3;
+            font-size: 12px;
+        }
+
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="login-container">
+
+        <div class="icone">🏥</div>
+
+        <h1>Clínica Dr. Júlio César</h1>
+
+        <p class="subtitulo">
+            Acesso exclusivo à administração
+        </p>
+
+        <form id="form-login">
+
+            <div class="campo">
+                <label for="email">E-mail</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Digite seu e-mail"
+                    autocomplete="username"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha</label>
+
+                <input
+                    type="password"
+                    id="senha"
+                    placeholder="Digite sua senha"
+                    autocomplete="current-password"
+                    required
+                >
+            </div>
+
+            <button
+                type="submit"
+                class="btn-entrar"
+                id="btn-entrar"
+            >
+                🔐 Entrar no painel
+            </button>
+
+            <p
+                class="mensagem"
+                id="mensagem-login"
+                role="status"
+                aria-live="polite"
+            ></p>
+
+        </form>
+
+        <a href="index.html" class="voltar">
+            ← Voltar ao site da clínica
+        </a>
+
+        <p class="rodape">
+            Sistema administrativo • Ambiente demonstrativo
+        </p>
+
+    </main>
+
+    <script type="module" src="admin.js"></script>
+
+</body>
+</html>
